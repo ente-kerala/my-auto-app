@@ -10,12 +10,9 @@
   <link rel="manifest" href="./manifest.json">
   <link rel="stylesheet" href="./style.css">
 </head>
-
 <body>
   <main class="app">
-
     <div class="logo">🚕</div>
-
     <h1>MY AUTO</h1>
     <p class="subtitle">Your Local Auto Finder</p>
     <p class="malayalam">നിങ്ങളുടെ അടുത്തുള്ള ഓട്ടോ കണ്ടെത്താം</p>
@@ -25,18 +22,7 @@
       FIND NEARBY AUTO
     </a>
 
-    <a class="btn register"
-       href="https://script.google.com/macros/s/AKfycbzLEZ8t7sZhg50CR_wFcioVZbY9yM86egdTa8lhBNQ6/dev?page=register">
-      AUTO REGISTRATION
-    </a>
-
-    <a class="btn admin"
-       href="https://script.google.com/macros/s/AKfycbzLEZ8t7sZhg50CR_wFcioVZbY9yM86egdTa8lhBNQ6/dev?page=admin">
-      ADMIN LOGIN
-    </a>
-
     <p class="footer">MY AUTO © 2026</p>
-
   </main>
 
   <script>
@@ -44,7 +30,7 @@
       window.addEventListener("load", function () {
         navigator.serviceWorker.register("./service-worker.js")
           .catch(function (error) {
-            console.log("Service worker registration failed:", error);
+            console.log(error);
           });
       });
     }
